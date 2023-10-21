@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+.main-body {
+    margin: 25px 250px 75px 250px;
+}
