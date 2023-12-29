@@ -1,16 +1,59 @@
-h1 {
-    text-align: center;
+/* CSS RESET */
+/* Reset default browser margins and box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h3 {
-    text-align: center;
-    color: red;
+/* UTILITY CLASSES */
+.red {
+  color: red;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+/* GENERAL STYLING */
+
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: floralwhite;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: floralwhite;
 }
 
-.main-body {
-    margin: 25px 250px 75px 250px;
+header {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+main {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* RESPONSIVENESS */
+/* Increased L and R margins on wider screens */
+@media screen and (min-width: 1100px) {
+  main {
+    max-width: 65vw;
+  }
+}
+
+/* Decreased L and R margins on smaller / mobile screens */
+@media screen and (max-width: 650px) {
+  main {
+    max-width: 90vw;
+  }
 }
